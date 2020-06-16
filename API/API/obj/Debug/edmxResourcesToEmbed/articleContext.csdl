@@ -1,0 +1,799 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="articlesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Actors">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Single" />
+    <Property Name="Count" Type="Int32" />
+    <NavigationProperty Name="ActorsArticles" Relationship="Self.FK_ActorsArticles_Actors" FromRole="Actors" ToRole="ActorsArticles" />
+  </EntityType>
+  <EntityType Name="ActorsArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Actors" Relationship="Self.FK_ActorsArticles_Actors" FromRole="ActorsArticles" ToRole="Actors" />
+  </EntityType>
+  <EntityType Name="Animals">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Biology">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Single" />
+    <Property Name="Count" Type="Int32" />
+    <NavigationProperty Name="BiologyArticles" Relationship="Self.FK_BiologyArticles_Biology" FromRole="Biology" ToRole="BiologyArticles" />
+  </EntityType>
+  <EntityType Name="BiologyArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Biology" Relationship="Self.FK_BiologyArticles_Biology" FromRole="BiologyArticles" ToRole="Biology" />
+  </EntityType>
+  <EntityType Name="Birds">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Single" />
+    <Property Name="Count" Type="Int32" />
+    <NavigationProperty Name="BirdsArticles" Relationship="Self.FK_BirdsArticles_Birds" FromRole="Birds" ToRole="BirdsArticles" />
+  </EntityType>
+  <EntityType Name="BirdsArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Birds" Relationship="Self.FK_BirdsArticles_Birds" FromRole="BirdsArticles" ToRole="Birds" />
+  </EntityType>
+  <EntityType Name="Dino">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Single" />
+    <Property Name="Count" Type="Int32" />
+    <NavigationProperty Name="DinoArticles" Relationship="Self.FK_DinoArticles_Dino" FromRole="Dino" ToRole="DinoArticles" />
+  </EntityType>
+  <EntityType Name="DinoArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Dino" Relationship="Self.FK_DinoArticles_Dino" FromRole="DinoArticles" ToRole="Dino" />
+  </EntityType>
+  <EntityType Name="Fish">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Single" />
+    <Property Name="Count" Type="Int32" />
+    <NavigationProperty Name="FishArticles" Relationship="Self.FK_FishArticles_Fish" FromRole="Fish" ToRole="FishArticles" />
+  </EntityType>
+  <EntityType Name="FishArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Fish" Relationship="Self.FK_FishArticles_Fish" FromRole="FishArticles" ToRole="Fish" />
+  </EntityType>
+  <EntityType Name="Games">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Single" />
+    <Property Name="Count" Type="Int32" />
+    <NavigationProperty Name="GamesArticles" Relationship="Self.FK_GamesArticles_Games" FromRole="Games" ToRole="GamesArticles" />
+  </EntityType>
+  <EntityType Name="GamesArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Games" Relationship="Self.FK_GamesArticles_Games" FromRole="GamesArticles" ToRole="Games" />
+  </EntityType>
+  <EntityType Name="Geography">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Single" />
+    <Property Name="Count" Type="Int32" />
+    <NavigationProperty Name="GeographyArticles" Relationship="Self.FK_GeographyArticles_Geography" FromRole="Geography" ToRole="GeographyArticles" />
+  </EntityType>
+  <EntityType Name="GeographyArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Geography" Relationship="Self.FK_GeographyArticles_Geography" FromRole="GeographyArticles" ToRole="Geography" />
+  </EntityType>
+  <EntityType Name="History">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Single" />
+    <Property Name="Count" Type="Int32" />
+    <NavigationProperty Name="HistoryArticles" Relationship="Self.FK_HistoryArticles_History" FromRole="History" ToRole="HistoryArticles" />
+  </EntityType>
+  <EntityType Name="HistoryArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="History" Relationship="Self.FK_HistoryArticles_History" FromRole="HistoryArticles" ToRole="History" />
+  </EntityType>
+  <EntityType Name="Insects">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Single" />
+    <Property Name="Count" Type="Int32" />
+    <NavigationProperty Name="InsectsArticles" Relationship="Self.FK_InsectsArticles_Insects" FromRole="Insects" ToRole="InsectsArticles" />
+  </EntityType>
+  <EntityType Name="InsectsArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Insects" Relationship="Self.FK_InsectsArticles_Insects" FromRole="InsectsArticles" ToRole="Insects" />
+  </EntityType>
+  <EntityType Name="Inventors">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Single" />
+    <Property Name="Count" Type="Int32" />
+    <NavigationProperty Name="InventorsArticles" Relationship="Self.FK_InventorsArticles_Inventors" FromRole="Inventors" ToRole="InventorsArticles" />
+  </EntityType>
+  <EntityType Name="InventorsArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Inventors" Relationship="Self.FK_InventorsArticles_Inventors" FromRole="InventorsArticles" ToRole="Inventors" />
+  </EntityType>
+  <EntityType Name="Mathematics">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Single" />
+    <Property Name="Count" Type="Int32" />
+    <NavigationProperty Name="MathematicsArticles" Relationship="Self.FK_MathematicsArticles_Mathematics" FromRole="Mathematics" ToRole="MathematicsArticles" />
+  </EntityType>
+  <EntityType Name="MathematicsArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Mathematics" Relationship="Self.FK_MathematicsArticles_Mathematics" FromRole="MathematicsArticles" ToRole="Mathematics" />
+  </EntityType>
+  <EntityType Name="People">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Physics">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Single" />
+    <Property Name="Count" Type="Int32" />
+    <NavigationProperty Name="PhysicsArticles" Relationship="Self.FK_PhysicsArticles_Physics" FromRole="Physics" ToRole="PhysicsArticles" />
+  </EntityType>
+  <EntityType Name="PhysicsArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Physics" Relationship="Self.FK_PhysicsArticles_Physics" FromRole="PhysicsArticles" ToRole="Physics" />
+  </EntityType>
+  <EntityType Name="Science">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Section">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sections" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Section" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Space">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Single" />
+    <Property Name="Count" Type="Int32" />
+    <NavigationProperty Name="SpaceArticles" Relationship="Self.FK_SpaceArticles_Space" FromRole="Space" ToRole="SpaceArticles" />
+  </EntityType>
+  <EntityType Name="SpaceArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Space" Relationship="Self.FK_SpaceArticles_Space" FromRole="SpaceArticles" ToRole="Space" />
+  </EntityType>
+  <EntityType Name="Technologies">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Single" />
+    <Property Name="Count" Type="Int32" />
+    <NavigationProperty Name="TechnologiesArticles" Relationship="Self.FK_TechnologiesArticles_Technologies" FromRole="Technologies" ToRole="TechnologiesArticles" />
+  </EntityType>
+  <EntityType Name="TechnologiesArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Technologies" Relationship="Self.FK_TechnologiesArticles_Technologies" FromRole="TechnologiesArticles" ToRole="Technologies" />
+  </EntityType>
+  <EntityType Name="Wild">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Single" />
+    <Property Name="Count" Type="Int32" />
+    <NavigationProperty Name="WildArticles" Relationship="Self.FK_WildArticles_Wild" FromRole="Wild" ToRole="WildArticles" />
+  </EntityType>
+  <EntityType Name="WildArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Wild" Relationship="Self.FK_WildArticles_Wild" FromRole="WildArticles" ToRole="Wild" />
+  </EntityType>
+  <EntityType Name="Writers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Single" />
+    <Property Name="Count" Type="Int32" />
+    <NavigationProperty Name="WritersArticles" Relationship="Self.FK_WritersArticles_Writers" FromRole="Writers" ToRole="WritersArticles" />
+  </EntityType>
+  <EntityType Name="WritersArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Writers" Relationship="Self.FK_WritersArticles_Writers" FromRole="WritersArticles" ToRole="Writers" />
+  </EntityType>
+  <Association Name="FK_ActorsArticles_Actors">
+    <End Role="Actors" Type="Self.Actors" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ActorsArticles" Type="Self.ActorsArticles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Actors">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ActorsArticles">
+        <PropertyRef Name="ID_Article" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BiologyArticles_Biology">
+    <End Role="Biology" Type="Self.Biology" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="BiologyArticles" Type="Self.BiologyArticles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Biology">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BiologyArticles">
+        <PropertyRef Name="ID_Article" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BirdsArticles_Birds">
+    <End Role="Birds" Type="Self.Birds" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="BirdsArticles" Type="Self.BirdsArticles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Birds">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BirdsArticles">
+        <PropertyRef Name="ID_Article" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DinoArticles_Dino">
+    <End Role="Dino" Type="Self.Dino" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="DinoArticles" Type="Self.DinoArticles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Dino">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DinoArticles">
+        <PropertyRef Name="ID_Article" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FishArticles_Fish">
+    <End Role="Fish" Type="Self.Fish" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="FishArticles" Type="Self.FishArticles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Fish">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FishArticles">
+        <PropertyRef Name="ID_Article" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GamesArticles_Games">
+    <End Role="Games" Type="Self.Games" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="GamesArticles" Type="Self.GamesArticles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Games">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GamesArticles">
+        <PropertyRef Name="ID_Article" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GeographyArticles_Geography">
+    <End Role="Geography" Type="Self.Geography" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="GeographyArticles" Type="Self.GeographyArticles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Geography">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GeographyArticles">
+        <PropertyRef Name="ID_Article" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HistoryArticles_History">
+    <End Role="History" Type="Self.History" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="HistoryArticles" Type="Self.HistoryArticles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="History">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="HistoryArticles">
+        <PropertyRef Name="ID_Article" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InsectsArticles_Insects">
+    <End Role="Insects" Type="Self.Insects" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="InsectsArticles" Type="Self.InsectsArticles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Insects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="InsectsArticles">
+        <PropertyRef Name="ID_Article" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InventorsArticles_Inventors">
+    <End Role="Inventors" Type="Self.Inventors" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="InventorsArticles" Type="Self.InventorsArticles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Inventors">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="InventorsArticles">
+        <PropertyRef Name="ID_Article" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MathematicsArticles_Mathematics">
+    <End Role="Mathematics" Type="Self.Mathematics" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MathematicsArticles" Type="Self.MathematicsArticles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Mathematics">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MathematicsArticles">
+        <PropertyRef Name="ID_Article" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhysicsArticles_Physics">
+    <End Role="Physics" Type="Self.Physics" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PhysicsArticles" Type="Self.PhysicsArticles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Physics">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PhysicsArticles">
+        <PropertyRef Name="ID_Article" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SpaceArticles_Space">
+    <End Role="Space" Type="Self.Space" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SpaceArticles" Type="Self.SpaceArticles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Space">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SpaceArticles">
+        <PropertyRef Name="ID_Article" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TechnologiesArticles_Technologies">
+    <End Role="Technologies" Type="Self.Technologies" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TechnologiesArticles" Type="Self.TechnologiesArticles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Technologies">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TechnologiesArticles">
+        <PropertyRef Name="ID_Article" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WildArticles_Wild">
+    <End Role="Wild" Type="Self.Wild" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="WildArticles" Type="Self.WildArticles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Wild">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="WildArticles">
+        <PropertyRef Name="ID_Article" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WritersArticles_Writers">
+    <End Role="Writers" Type="Self.Writers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="WritersArticles" Type="Self.WritersArticles" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Writers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="WritersArticles">
+        <PropertyRef Name="ID_Article" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="articlesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Actors" EntityType="Self.Actors" />
+    <EntitySet Name="ActorsArticles" EntityType="Self.ActorsArticles" />
+    <EntitySet Name="Animals" EntityType="Self.Animals" />
+    <EntitySet Name="Biology" EntityType="Self.Biology" />
+    <EntitySet Name="BiologyArticles" EntityType="Self.BiologyArticles" />
+    <EntitySet Name="Birds" EntityType="Self.Birds" />
+    <EntitySet Name="BirdsArticles" EntityType="Self.BirdsArticles" />
+    <EntitySet Name="Dino" EntityType="Self.Dino" />
+    <EntitySet Name="DinoArticles" EntityType="Self.DinoArticles" />
+    <EntitySet Name="Fish" EntityType="Self.Fish" />
+    <EntitySet Name="FishArticles" EntityType="Self.FishArticles" />
+    <EntitySet Name="Games" EntityType="Self.Games" />
+    <EntitySet Name="GamesArticles" EntityType="Self.GamesArticles" />
+    <EntitySet Name="Geography" EntityType="Self.Geography" />
+    <EntitySet Name="GeographyArticles" EntityType="Self.GeographyArticles" />
+    <EntitySet Name="History" EntityType="Self.History" />
+    <EntitySet Name="HistoryArticles" EntityType="Self.HistoryArticles" />
+    <EntitySet Name="Insects" EntityType="Self.Insects" />
+    <EntitySet Name="InsectsArticles" EntityType="Self.InsectsArticles" />
+    <EntitySet Name="Inventors" EntityType="Self.Inventors" />
+    <EntitySet Name="InventorsArticles" EntityType="Self.InventorsArticles" />
+    <EntitySet Name="Mathematics" EntityType="Self.Mathematics" />
+    <EntitySet Name="MathematicsArticles" EntityType="Self.MathematicsArticles" />
+    <EntitySet Name="People" EntityType="Self.People" />
+    <EntitySet Name="Physics" EntityType="Self.Physics" />
+    <EntitySet Name="PhysicsArticles" EntityType="Self.PhysicsArticles" />
+    <EntitySet Name="Science" EntityType="Self.Science" />
+    <EntitySet Name="Section" EntityType="Self.Section" />
+    <EntitySet Name="Space" EntityType="Self.Space" />
+    <EntitySet Name="SpaceArticles" EntityType="Self.SpaceArticles" />
+    <EntitySet Name="Technologies" EntityType="Self.Technologies" />
+    <EntitySet Name="TechnologiesArticles" EntityType="Self.TechnologiesArticles" />
+    <EntitySet Name="Wild" EntityType="Self.Wild" />
+    <EntitySet Name="WildArticles" EntityType="Self.WildArticles" />
+    <EntitySet Name="Writers" EntityType="Self.Writers" />
+    <EntitySet Name="WritersArticles" EntityType="Self.WritersArticles" />
+    <AssociationSet Name="FK_ActorsArticles_Actors" Association="Self.FK_ActorsArticles_Actors">
+      <End Role="Actors" EntitySet="Actors" />
+      <End Role="ActorsArticles" EntitySet="ActorsArticles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BiologyArticles_Biology" Association="Self.FK_BiologyArticles_Biology">
+      <End Role="Biology" EntitySet="Biology" />
+      <End Role="BiologyArticles" EntitySet="BiologyArticles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BirdsArticles_Birds" Association="Self.FK_BirdsArticles_Birds">
+      <End Role="Birds" EntitySet="Birds" />
+      <End Role="BirdsArticles" EntitySet="BirdsArticles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DinoArticles_Dino" Association="Self.FK_DinoArticles_Dino">
+      <End Role="Dino" EntitySet="Dino" />
+      <End Role="DinoArticles" EntitySet="DinoArticles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FishArticles_Fish" Association="Self.FK_FishArticles_Fish">
+      <End Role="Fish" EntitySet="Fish" />
+      <End Role="FishArticles" EntitySet="FishArticles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GamesArticles_Games" Association="Self.FK_GamesArticles_Games">
+      <End Role="Games" EntitySet="Games" />
+      <End Role="GamesArticles" EntitySet="GamesArticles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GeographyArticles_Geography" Association="Self.FK_GeographyArticles_Geography">
+      <End Role="Geography" EntitySet="Geography" />
+      <End Role="GeographyArticles" EntitySet="GeographyArticles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HistoryArticles_History" Association="Self.FK_HistoryArticles_History">
+      <End Role="History" EntitySet="History" />
+      <End Role="HistoryArticles" EntitySet="HistoryArticles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InsectsArticles_Insects" Association="Self.FK_InsectsArticles_Insects">
+      <End Role="Insects" EntitySet="Insects" />
+      <End Role="InsectsArticles" EntitySet="InsectsArticles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InventorsArticles_Inventors" Association="Self.FK_InventorsArticles_Inventors">
+      <End Role="Inventors" EntitySet="Inventors" />
+      <End Role="InventorsArticles" EntitySet="InventorsArticles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MathematicsArticles_Mathematics" Association="Self.FK_MathematicsArticles_Mathematics">
+      <End Role="Mathematics" EntitySet="Mathematics" />
+      <End Role="MathematicsArticles" EntitySet="MathematicsArticles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhysicsArticles_Physics" Association="Self.FK_PhysicsArticles_Physics">
+      <End Role="Physics" EntitySet="Physics" />
+      <End Role="PhysicsArticles" EntitySet="PhysicsArticles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SpaceArticles_Space" Association="Self.FK_SpaceArticles_Space">
+      <End Role="Space" EntitySet="Space" />
+      <End Role="SpaceArticles" EntitySet="SpaceArticles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TechnologiesArticles_Technologies" Association="Self.FK_TechnologiesArticles_Technologies">
+      <End Role="Technologies" EntitySet="Technologies" />
+      <End Role="TechnologiesArticles" EntitySet="TechnologiesArticles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WildArticles_Wild" Association="Self.FK_WildArticles_Wild">
+      <End Role="Wild" EntitySet="Wild" />
+      <End Role="WildArticles" EntitySet="WildArticles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WritersArticles_Writers" Association="Self.FK_WritersArticles_Writers">
+      <End Role="Writers" EntitySet="Writers" />
+      <End Role="WritersArticles" EntitySet="WritersArticles" />
+    </AssociationSet>
+    <FunctionImport Name="ActorsProcedure">
+      <Parameter Name="link" Mode="In" Type="String" />
+      <Parameter Name="header" Mode="In" Type="String" />
+      <Parameter Name="text" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="BiologyProcedure">
+      <Parameter Name="link" Mode="In" Type="String" />
+      <Parameter Name="header" Mode="In" Type="String" />
+      <Parameter Name="text" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="BirdsProcedure">
+      <Parameter Name="link" Mode="In" Type="String" />
+      <Parameter Name="header" Mode="In" Type="String" />
+      <Parameter Name="text" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DinoProcedure">
+      <Parameter Name="link" Mode="In" Type="String" />
+      <Parameter Name="header" Mode="In" Type="String" />
+      <Parameter Name="text" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="FishProcedure">
+      <Parameter Name="link" Mode="In" Type="String" />
+      <Parameter Name="header" Mode="In" Type="String" />
+      <Parameter Name="text" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GamesProcedure">
+      <Parameter Name="link" Mode="In" Type="String" />
+      <Parameter Name="header" Mode="In" Type="String" />
+      <Parameter Name="text" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GeographyProcedure">
+      <Parameter Name="link" Mode="In" Type="String" />
+      <Parameter Name="header" Mode="In" Type="String" />
+      <Parameter Name="text" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="HistoryProcedure">
+      <Parameter Name="link" Mode="In" Type="String" />
+      <Parameter Name="header" Mode="In" Type="String" />
+      <Parameter Name="text" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="InsectsProcedure">
+      <Parameter Name="link" Mode="In" Type="String" />
+      <Parameter Name="header" Mode="In" Type="String" />
+      <Parameter Name="text" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="InventorsProcedure">
+      <Parameter Name="link" Mode="In" Type="String" />
+      <Parameter Name="header" Mode="In" Type="String" />
+      <Parameter Name="text" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="MathematicsProcedure">
+      <Parameter Name="link" Mode="In" Type="String" />
+      <Parameter Name="header" Mode="In" Type="String" />
+      <Parameter Name="text" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="PhysicsProcedure">
+      <Parameter Name="link" Mode="In" Type="String" />
+      <Parameter Name="header" Mode="In" Type="String" />
+      <Parameter Name="text" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(articlesModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(articlesModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <FunctionImport Name="SpaceProcedure">
+      <Parameter Name="link" Mode="In" Type="String" />
+      <Parameter Name="header" Mode="In" Type="String" />
+      <Parameter Name="text" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="TechnologiesProcedure">
+      <Parameter Name="link" Mode="In" Type="String" />
+      <Parameter Name="header" Mode="In" Type="String" />
+      <Parameter Name="text" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WildProcedure">
+      <Parameter Name="link" Mode="In" Type="String" />
+      <Parameter Name="header" Mode="In" Type="String" />
+      <Parameter Name="text" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="WritersProcedure">
+      <Parameter Name="link" Mode="In" Type="String" />
+      <Parameter Name="header" Mode="In" Type="String" />
+      <Parameter Name="text" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>

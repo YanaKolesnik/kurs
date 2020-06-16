@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище articlesModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Actors">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name_article" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ActorsArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link_Text" Type="nvarchar(max)" />
+    <Property Name="Link_Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Animals">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Biology">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name_article" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="BiologyArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link_Text" Type="nvarchar(max)" />
+    <Property Name="Link_Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Birds">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name_article" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="BirdsArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link_Text" Type="nvarchar(max)" />
+    <Property Name="Link_Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Dino">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name_article" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DinoArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link_Text" Type="nvarchar(max)" />
+    <Property Name="Link_Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Fish">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name_article" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="FishArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link_Text" Type="nvarchar(max)" />
+    <Property Name="Link_Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Games">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name_article" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="GamesArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link_Text" Type="nvarchar(max)" />
+    <Property Name="Link_Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Geography">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name_article" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="GeographyArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link_Text" Type="nvarchar(max)" />
+    <Property Name="Link_Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="History">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name_article" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="HistoryArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link_Text" Type="nvarchar(max)" />
+    <Property Name="Link_Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Insects">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name_article" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="InsectsArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link_Text" Type="nvarchar(max)" />
+    <Property Name="Link_Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Inventors">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name_article" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="InventorsArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link_Text" Type="nvarchar(max)" />
+    <Property Name="Link_Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Mathematics">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name_article" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MathematicsArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link_Text" Type="nvarchar(max)" />
+    <Property Name="Link_Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="People">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Physics">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name_article" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PhysicsArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link_Text" Type="nvarchar(max)" />
+    <Property Name="Link_Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Science">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Section">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Sections" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link_Section" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Space">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name_article" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SpaceArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link_Text" Type="nvarchar(max)" />
+    <Property Name="Link_Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Technologies">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name_article" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TechnologiesArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link_Text" Type="nvarchar(max)" />
+    <Property Name="Link_Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Wild">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name_article" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="WildArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link_Text" Type="nvarchar(max)" />
+    <Property Name="Link_Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Writers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name_article" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="WritersArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link_Text" Type="nvarchar(max)" />
+    <Property Name="Link_Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="Хранилище articlesModelContainer">
+    <EntitySet Name="Actors" EntityType="Self.Actors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ActorsArticles" EntityType="Self.ActorsArticles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Animals" EntityType="Self.Animals" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Biology" EntityType="Self.Biology" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BiologyArticles" EntityType="Self.BiologyArticles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Birds" EntityType="Self.Birds" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BirdsArticles" EntityType="Self.BirdsArticles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dino" EntityType="Self.Dino" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DinoArticles" EntityType="Self.DinoArticles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fish" EntityType="Self.Fish" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FishArticles" EntityType="Self.FishArticles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Games" EntityType="Self.Games" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GamesArticles" EntityType="Self.GamesArticles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Geography" EntityType="Self.Geography" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GeographyArticles" EntityType="Self.GeographyArticles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="History" EntityType="Self.History" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HistoryArticles" EntityType="Self.HistoryArticles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Insects" EntityType="Self.Insects" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InsectsArticles" EntityType="Self.InsectsArticles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Inventors" EntityType="Self.Inventors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InventorsArticles" EntityType="Self.InventorsArticles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Mathematics" EntityType="Self.Mathematics" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MathematicsArticles" EntityType="Self.MathematicsArticles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="People" EntityType="Self.People" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Physics" EntityType="Self.Physics" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhysicsArticles" EntityType="Self.PhysicsArticles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Science" EntityType="Self.Science" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Section" EntityType="Self.Section" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Space" EntityType="Self.Space" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SpaceArticles" EntityType="Self.SpaceArticles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Technologies" EntityType="Self.Technologies" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TechnologiesArticles" EntityType="Self.TechnologiesArticles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Wild" EntityType="Self.Wild" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WildArticles" EntityType="Self.WildArticles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Writers" EntityType="Self.Writers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WritersArticles" EntityType="Self.WritersArticles" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

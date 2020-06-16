@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище articlesModelContainer" CdmEntityContainer="articlesEntities">
+    <EntitySetMapping Name="Actors">
+      <EntityTypeMapping TypeName="articlesModel.Actors">
+        <MappingFragment StoreEntitySet="Actors">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name_article" ColumnName="Name_article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ActorsArticles">
+      <EntityTypeMapping TypeName="articlesModel.ActorsArticles">
+        <MappingFragment StoreEntitySet="ActorsArticles">
+          <ScalarProperty Name="ID_Article" ColumnName="ID_Article" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Link_Text" ColumnName="Link_Text" />
+          <ScalarProperty Name="Link_Image" ColumnName="Link_Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Animals">
+      <EntityTypeMapping TypeName="articlesModel.Animals">
+        <MappingFragment StoreEntitySet="Animals">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Biology">
+      <EntityTypeMapping TypeName="articlesModel.Biology">
+        <MappingFragment StoreEntitySet="Biology">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name_article" ColumnName="Name_article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BiologyArticles">
+      <EntityTypeMapping TypeName="articlesModel.BiologyArticles">
+        <MappingFragment StoreEntitySet="BiologyArticles">
+          <ScalarProperty Name="ID_Article" ColumnName="ID_Article" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Link_Text" ColumnName="Link_Text" />
+          <ScalarProperty Name="Link_Image" ColumnName="Link_Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Birds">
+      <EntityTypeMapping TypeName="articlesModel.Birds">
+        <MappingFragment StoreEntitySet="Birds">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name_article" ColumnName="Name_article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BirdsArticles">
+      <EntityTypeMapping TypeName="articlesModel.BirdsArticles">
+        <MappingFragment StoreEntitySet="BirdsArticles">
+          <ScalarProperty Name="ID_Article" ColumnName="ID_Article" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Link_Text" ColumnName="Link_Text" />
+          <ScalarProperty Name="Link_Image" ColumnName="Link_Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dino">
+      <EntityTypeMapping TypeName="articlesModel.Dino">
+        <MappingFragment StoreEntitySet="Dino">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name_article" ColumnName="Name_article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DinoArticles">
+      <EntityTypeMapping TypeName="articlesModel.DinoArticles">
+        <MappingFragment StoreEntitySet="DinoArticles">
+          <ScalarProperty Name="ID_Article" ColumnName="ID_Article" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Link_Text" ColumnName="Link_Text" />
+          <ScalarProperty Name="Link_Image" ColumnName="Link_Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fish">
+      <EntityTypeMapping TypeName="articlesModel.Fish">
+        <MappingFragment StoreEntitySet="Fish">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name_article" ColumnName="Name_article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FishArticles">
+      <EntityTypeMapping TypeName="articlesModel.FishArticles">
+        <MappingFragment StoreEntitySet="FishArticles">
+          <ScalarProperty Name="ID_Article" ColumnName="ID_Article" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Link_Text" ColumnName="Link_Text" />
+          <ScalarProperty Name="Link_Image" ColumnName="Link_Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Games">
+      <EntityTypeMapping TypeName="articlesModel.Games">
+        <MappingFragment StoreEntitySet="Games">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name_article" ColumnName="Name_article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GamesArticles">
+      <EntityTypeMapping TypeName="articlesModel.GamesArticles">
+        <MappingFragment StoreEntitySet="GamesArticles">
+          <ScalarProperty Name="ID_Article" ColumnName="ID_Article" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Link_Text" ColumnName="Link_Text" />
+          <ScalarProperty Name="Link_Image" ColumnName="Link_Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Geography">
+      <EntityTypeMapping TypeName="articlesModel.Geography">
+        <MappingFragment StoreEntitySet="Geography">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name_article" ColumnName="Name_article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GeographyArticles">
+      <EntityTypeMapping TypeName="articlesModel.GeographyArticles">
+        <MappingFragment StoreEntitySet="GeographyArticles">
+          <ScalarProperty Name="ID_Article" ColumnName="ID_Article" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Link_Text" ColumnName="Link_Text" />
+          <ScalarProperty Name="Link_Image" ColumnName="Link_Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="History">
+      <EntityTypeMapping TypeName="articlesModel.History">
+        <MappingFragment StoreEntitySet="History">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name_article" ColumnName="Name_article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HistoryArticles">
+      <EntityTypeMapping TypeName="articlesModel.HistoryArticles">
+        <MappingFragment StoreEntitySet="HistoryArticles">
+          <ScalarProperty Name="ID_Article" ColumnName="ID_Article" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Link_Text" ColumnName="Link_Text" />
+          <ScalarProperty Name="Link_Image" ColumnName="Link_Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Insects">
+      <EntityTypeMapping TypeName="articlesModel.Insects">
+        <MappingFragment StoreEntitySet="Insects">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name_article" ColumnName="Name_article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InsectsArticles">
+      <EntityTypeMapping TypeName="articlesModel.InsectsArticles">
+        <MappingFragment StoreEntitySet="InsectsArticles">
+          <ScalarProperty Name="ID_Article" ColumnName="ID_Article" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Link_Text" ColumnName="Link_Text" />
+          <ScalarProperty Name="Link_Image" ColumnName="Link_Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inventors">
+      <EntityTypeMapping TypeName="articlesModel.Inventors">
+        <MappingFragment StoreEntitySet="Inventors">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name_article" ColumnName="Name_article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventorsArticles">
+      <EntityTypeMapping TypeName="articlesModel.InventorsArticles">
+        <MappingFragment StoreEntitySet="InventorsArticles">
+          <ScalarProperty Name="ID_Article" ColumnName="ID_Article" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Link_Text" ColumnName="Link_Text" />
+          <ScalarProperty Name="Link_Image" ColumnName="Link_Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mathematics">
+      <EntityTypeMapping TypeName="articlesModel.Mathematics">
+        <MappingFragment StoreEntitySet="Mathematics">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name_article" ColumnName="Name_article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MathematicsArticles">
+      <EntityTypeMapping TypeName="articlesModel.MathematicsArticles">
+        <MappingFragment StoreEntitySet="MathematicsArticles">
+          <ScalarProperty Name="ID_Article" ColumnName="ID_Article" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Link_Text" ColumnName="Link_Text" />
+          <ScalarProperty Name="Link_Image" ColumnName="Link_Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="People">
+      <EntityTypeMapping TypeName="articlesModel.People">
+        <MappingFragment StoreEntitySet="People">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Physics">
+      <EntityTypeMapping TypeName="articlesModel.Physics">
+        <MappingFragment StoreEntitySet="Physics">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name_article" ColumnName="Name_article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhysicsArticles">
+      <EntityTypeMapping TypeName="articlesModel.PhysicsArticles">
+        <MappingFragment StoreEntitySet="PhysicsArticles">
+          <ScalarProperty Name="ID_Article" ColumnName="ID_Article" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Link_Text" ColumnName="Link_Text" />
+          <ScalarProperty Name="Link_Image" ColumnName="Link_Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Science">
+      <EntityTypeMapping TypeName="articlesModel.Science">
+        <MappingFragment StoreEntitySet="Science">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Section">
+      <EntityTypeMapping TypeName="articlesModel.Section">
+        <MappingFragment StoreEntitySet="Section">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Sections" ColumnName="Sections" />
+          <ScalarProperty Name="Link_Section" ColumnName="Link_Section" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Space">
+      <EntityTypeMapping TypeName="articlesModel.Space">
+        <MappingFragment StoreEntitySet="Space">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name_article" ColumnName="Name_article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SpaceArticles">
+      <EntityTypeMapping TypeName="articlesModel.SpaceArticles">
+        <MappingFragment StoreEntitySet="SpaceArticles">
+          <ScalarProperty Name="ID_Article" ColumnName="ID_Article" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Link_Text" ColumnName="Link_Text" />
+          <ScalarProperty Name="Link_Image" ColumnName="Link_Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Technologies">
+      <EntityTypeMapping TypeName="articlesModel.Technologies">
+        <MappingFragment StoreEntitySet="Technologies">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name_article" ColumnName="Name_article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TechnologiesArticles">
+      <EntityTypeMapping TypeName="articlesModel.TechnologiesArticles">
+        <MappingFragment StoreEntitySet="TechnologiesArticles">
+          <ScalarProperty Name="ID_Article" ColumnName="ID_Article" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Link_Text" ColumnName="Link_Text" />
+          <ScalarProperty Name="Link_Image" ColumnName="Link_Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Wild">
+      <EntityTypeMapping TypeName="articlesModel.Wild">
+        <MappingFragment StoreEntitySet="Wild">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name_article" ColumnName="Name_article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WildArticles">
+      <EntityTypeMapping TypeName="articlesModel.WildArticles">
+        <MappingFragment StoreEntitySet="WildArticles">
+          <ScalarProperty Name="ID_Article" ColumnName="ID_Article" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Link_Text" ColumnName="Link_Text" />
+          <ScalarProperty Name="Link_Image" ColumnName="Link_Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Writers">
+      <EntityTypeMapping TypeName="articlesModel.Writers">
+        <MappingFragment StoreEntitySet="Writers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name_article" ColumnName="Name_article" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WritersArticles">
+      <EntityTypeMapping TypeName="articlesModel.WritersArticles">
+        <MappingFragment StoreEntitySet="WritersArticles">
+          <ScalarProperty Name="ID_Article" ColumnName="ID_Article" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Link_Text" ColumnName="Link_Text" />
+          <ScalarProperty Name="Link_Image" ColumnName="Link_Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

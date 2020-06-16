@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="014b0d3b7d6a4567bf9f53007d2393b0" Name="Diagram1">
+        <EntityTypeShape EntityType="articlesModel.Actors" Width="1.5" PointX="15.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.ActorsArticles" Width="1.5" PointX="18" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.Animals" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.Biology" Width="1.5" PointX="10.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.BiologyArticles" Width="1.5" PointX="13" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.Birds" Width="1.5" PointX="5.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.BirdsArticles" Width="1.5" PointX="8" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.Dino" Width="1.5" PointX="0.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.DinoArticles" Width="1.5" PointX="3" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.Fish" Width="1.5" PointX="10.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.FishArticles" Width="1.5" PointX="13" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.Games" Width="1.5" PointX="10.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.GamesArticles" Width="1.5" PointX="13" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.Geography" Width="1.5" PointX="10.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.GeographyArticles" Width="1.5" PointX="13" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.History" Width="1.5" PointX="10.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.HistoryArticles" Width="1.5" PointX="13" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.Insects" Width="1.5" PointX="5.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.InsectsArticles" Width="1.5" PointX="8" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.Inventors" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.InventorsArticles" Width="1.5" PointX="3" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.Mathematics" Width="1.5" PointX="5.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.MathematicsArticles" Width="1.5" PointX="8" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.People" Width="1.5" PointX="2.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.Physics" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.PhysicsArticles" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.Science" Width="1.5" PointX="15.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.Section" Width="1.5" PointX="4.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.Space" Width="1.5" PointX="5.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.SpaceArticles" Width="1.5" PointX="8" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.Technologies" Width="1.5" PointX="5.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.TechnologiesArticles" Width="1.5" PointX="8" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.Wild" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.WildArticles" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.Writers" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="articlesModel.WritersArticles" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="articlesModel.FK_ActorsArticles_Actors" ManuallyRouted="false" />
+        <AssociationConnector Association="articlesModel.FK_BiologyArticles_Biology" ManuallyRouted="false" />
+        <AssociationConnector Association="articlesModel.FK_BirdsArticles_Birds" ManuallyRouted="false" />
+        <AssociationConnector Association="articlesModel.FK_DinoArticles_Dino" ManuallyRouted="false" />
+        <AssociationConnector Association="articlesModel.FK_FishArticles_Fish" ManuallyRouted="false" />
+        <AssociationConnector Association="articlesModel.FK_GamesArticles_Games" ManuallyRouted="false" />
+        <AssociationConnector Association="articlesModel.FK_GeographyArticles_Geography" ManuallyRouted="false" />
+        <AssociationConnector Association="articlesModel.FK_HistoryArticles_History" ManuallyRouted="false" />
+        <AssociationConnector Association="articlesModel.FK_InsectsArticles_Insects" ManuallyRouted="false" />
+        <AssociationConnector Association="articlesModel.FK_InventorsArticles_Inventors" ManuallyRouted="false" />
+        <AssociationConnector Association="articlesModel.FK_MathematicsArticles_Mathematics" ManuallyRouted="false" />
+        <AssociationConnector Association="articlesModel.FK_PhysicsArticles_Physics" ManuallyRouted="false" />
+        <AssociationConnector Association="articlesModel.FK_SpaceArticles_Space" ManuallyRouted="false" />
+        <AssociationConnector Association="articlesModel.FK_TechnologiesArticles_Technologies" ManuallyRouted="false" />
+        <AssociationConnector Association="articlesModel.FK_WildArticles_Wild" ManuallyRouted="false" />
+        <AssociationConnector Association="articlesModel.FK_WritersArticles_Writers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="articlesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Actors">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ActorsArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Animals">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Biology">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="BiologyArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Birds">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="BirdsArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Dino">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DinoArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Fish">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="FishArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Games">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GamesArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Geography">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GeographyArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="History">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="HistoryArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Insects">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="InsectsArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Inventors">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="InventorsArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Mathematics">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MathematicsArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="People">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Physics">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PhysicsArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Science">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Section">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Sections" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Section" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Space">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SpaceArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Technologies">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TechnologiesArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Wild">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WildArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Writers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name_article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="WritersArticles">
+    <Key>
+      <PropertyRef Name="ID_Article" />
+    </Key>
+    <Property Name="ID_Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Link_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="articlesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Actors" EntityType="Self.Actors" />
+    <EntitySet Name="ActorsArticles" EntityType="Self.ActorsArticles" />
+    <EntitySet Name="Animals" EntityType="Self.Animals" />
+    <EntitySet Name="Biology" EntityType="Self.Biology" />
+    <EntitySet Name="BiologyArticles" EntityType="Self.BiologyArticles" />
+    <EntitySet Name="Birds" EntityType="Self.Birds" />
+    <EntitySet Name="BirdsArticles" EntityType="Self.BirdsArticles" />
+    <EntitySet Name="Dino" EntityType="Self.Dino" />
+    <EntitySet Name="DinoArticles" EntityType="Self.DinoArticles" />
+    <EntitySet Name="Fish" EntityType="Self.Fish" />
+    <EntitySet Name="FishArticles" EntityType="Self.FishArticles" />
+    <EntitySet Name="Games" EntityType="Self.Games" />
+    <EntitySet Name="GamesArticles" EntityType="Self.GamesArticles" />
+    <EntitySet Name="Geography" EntityType="Self.Geography" />
+    <EntitySet Name="GeographyArticles" EntityType="Self.GeographyArticles" />
+    <EntitySet Name="History" EntityType="Self.History" />
+    <EntitySet Name="HistoryArticles" EntityType="Self.HistoryArticles" />
+    <EntitySet Name="Insects" EntityType="Self.Insects" />
+    <EntitySet Name="InsectsArticles" EntityType="Self.InsectsArticles" />
+    <EntitySet Name="Inventors" EntityType="Self.Inventors" />
+    <EntitySet Name="InventorsArticles" EntityType="Self.InventorsArticles" />
+    <EntitySet Name="Mathematics" EntityType="Self.Mathematics" />
+    <EntitySet Name="MathematicsArticles" EntityType="Self.MathematicsArticles" />
+    <EntitySet Name="People" EntityType="Self.People" />
+    <EntitySet Name="Physics" EntityType="Self.Physics" />
+    <EntitySet Name="PhysicsArticles" EntityType="Self.PhysicsArticles" />
+    <EntitySet Name="Science" EntityType="Self.Science" />
+    <EntitySet Name="Section" EntityType="Self.Section" />
+    <EntitySet Name="Space" EntityType="Self.Space" />
+    <EntitySet Name="SpaceArticles" EntityType="Self.SpaceArticles" />
+    <EntitySet Name="Technologies" EntityType="Self.Technologies" />
+    <EntitySet Name="TechnologiesArticles" EntityType="Self.TechnologiesArticles" />
+    <EntitySet Name="Wild" EntityType="Self.Wild" />
+    <EntitySet Name="WildArticles" EntityType="Self.WildArticles" />
+    <EntitySet Name="Writers" EntityType="Self.Writers" />
+    <EntitySet Name="WritersArticles" EntityType="Self.WritersArticles" />
+  </EntityContainer>
+</Schema>

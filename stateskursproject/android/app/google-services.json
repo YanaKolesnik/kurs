@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "922250307715",
+    "firebase_url": "https://stateskursproject.firebaseio.com",
+    "project_id": "stateskursproject",
+    "storage_bucket": "stateskursproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922250307715:android:97c023951fc51b3b3f53b6",
+        "android_client_info": {
+          "package_name": "com.example.stateskursproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922250307715-juou5s4p1pin1i4paonsd0s75vefkoqm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmsz-HeQ7ISjxK7CiBlxNCf8c-i4Nk94c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "922250307715-juou5s4p1pin1i4paonsd0s75vefkoqm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
